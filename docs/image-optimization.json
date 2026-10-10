@@ -1,0 +1,135 @@
+{
+  "quality": 90,
+  "originals_preserved": true,
+  "images": [
+    {
+      "name": "hero-desarrollador",
+      "usage": "Hero principal",
+      "before": {
+        "bytes": 1758335,
+        "dimensions": [
+          1448,
+          1086
+        ],
+        "format": "PNG",
+        "mode": "RGBA",
+        "sha256": "b3463caeec75b87f901f104b4185dce28b0066a16995d22ec5d8bc2bb8af6d90"
+      },
+      "after": {
+        "bytes": 394684,
+        "dimensions": [
+          1448,
+          1086
+        ],
+        "format": "WEBP",
+        "mode": "RGBA"
+      },
+      "saved_bytes": 1363651,
+      "saved_percent": 77.55
+    },
+    {
+      "name": "servicio-desarrollo-web",
+      "usage": "Servicios: páginas web y landing pages",
+      "before": {
+        "bytes": 1489008,
+        "dimensions": [
+          1448,
+          1086
+        ],
+        "format": "PNG",
+        "mode": "RGBA",
+        "sha256": "6f22d8b559b4c7557b7e534bbdee4e5b386a1133273c1daf7ebd0c0dee49fc60"
+      },
+      "after": {
+        "bytes": 167836,
+        "dimensions": [
+          960,
+          720
+        ],
+        "format": "WEBP",
+        "mode": "RGBA"
+      },
+      "saved_bytes": 1321172,
+      "saved_percent": 88.73
+    },
+    {
+      "name": "servicio-apps-moviles",
+      "usage": "Servicio de aplicaciones móviles",
+      "before": {
+        "bytes": 1636351,
+        "dimensions": [
+          1448,
+          1086
+        ],
+        "format": "PNG",
+        "mode": "RGBA",
+        "sha256": "73ba528dbd7b9a043e90cda505984ddb23faaa71054b4a60f32dbb5579cdb875"
+      },
+      "after": {
+        "bytes": 194114,
+        "dimensions": [
+          960,
+          720
+        ],
+        "format": "WEBP",
+        "mode": "RGBA"
+      },
+      "saved_bytes": 1442237,
+      "saved_percent": 88.14
+    },
+    {
+      "name": "servicio-sistemas-backend",
+      "usage": "Servicio de sistemas y software a medida",
+      "before": {
+        "bytes": 1539159,
+        "dimensions": [
+          1448,
+          1086
+        ],
+        "format": "PNG",
+        "mode": "RGBA",
+        "sha256": "4427daa1dfffcca8baa9e4665d72aa215d96712b635a482ed01466a9a2580975"
+      },
+      "after": {
+        "bytes": 195970,
+        "dimensions": [
+          960,
+          720
+        ],
+        "format": "WEBP",
+        "mode": "RGBA"
+      },
+      "saved_bytes": 1343189,
+      "saved_percent": 87.27
+    },
+    {
+      "name": "contacto-cotizacion",
+      "usage": "Sección de contacto",
+      "before": {
+        "bytes": 1505792,
+        "dimensions": [
+          1448,
+          1086
+        ],
+        "format": "PNG",
+        "mode": "RGBA",
+        "sha256": "cc31bdf90df19f3da268c736ecedc73494196862673acbd9e619ccf2878b8980"
+      },
+      "after": {
+        "bytes": 109208,
+        "dimensions": [
+          720,
+          540
+        ],
+        "format": "WEBP",
+        "mode": "RGBA"
+      },
+      "saved_bytes": 1396584,
+      "saved_percent": 92.75
+    }
+  ],
+  "total_before": 7928645,
+  "total_after": 1061812,
+  "total_saved": 6866833,
+  "saved_percent": 86.61
+}
