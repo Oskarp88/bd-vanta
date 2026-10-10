@@ -2,6 +2,10 @@
 
 Sitio comercial para servicios de desarrollo web, aplicaciones móviles y software a medida. Construido con React, JavaScript y Vite. No requiere backend ni credenciales.
 
+- Producción: https://bd-vanta.vercel.app/
+- Repositorio: https://github.com/Oskarp88/bd-vanta
+- Dominio `bdvanta.com`: candidato, no comprado ni conectado.
+
 ## Requisitos y ejecución
 
 Node.js 20.19+ o 22.12+ (verificado con Node 24) y npm.
@@ -25,7 +29,7 @@ El build queda en `dist/`. Preview permite revisar ese build localmente. Para in
 ```text
 assets/images/          PNG originales proporcionados (conservados)
   optimized/            Copias WebP usadas por Vite en producción
-public/                 Favicon BD Vanta y vista previa social provisional
+public/                 Favicon BD Vanta, robots.txt e imagen Open Graph
 scripts/                Conversión reproducible de imágenes con Pillow
 docs/                   Informes por etapa, optimización y capturas de revisión
 src/
@@ -66,28 +70,27 @@ Los proyectos usan identidades tipográficas, descripciones y tecnologías confi
 
 Edita `src/data/siteConfig.js` para actualizar marca, descriptor, correo, teléfono, WhatsApp, LinkedIn, GitHub y portafolio. Los datos actuales son BD Vanta, `+57 300 685 6444`, `https://wa.me/573006856444` y `oskyburgos81@gmail.com`. LinkedIn, GitHub y el portafolio profesional son enlaces personales confirmados que muestran la experiencia detrás del negocio. Los enlaces sociales del footer se generan desde ese archivo: `facebook` e `instagram` permanecen vacíos y solo aparecen cuando se confirme una URL. El contenido de servicios, proyectos, tecnologías y FAQ sigue en `src/data/content.js`.
 
-`productionUrl` permanece vacío y `socialImagePath` sin configurar. `domainCandidate` registra `bdvanta.com` como posibilidad, sin asumir que esté comprado, conectado o publicado. Con una URL pública HTTPS confirmada, `vite.config.js` añade `canonical` y `og:url` durante el build. Cuando también exista una imagen social JPG, PNG o WebP en `public/`, se indica su ruta en `socialImagePath` y el build genera URLs absolutas en Open Graph y Twitter. Hasta entonces, `index.html` conserva la vista previa SVG provisional. La URL base de Vite permanece `/`, adecuada para publicar en la raíz del futuro sitio. No hay `.env` ni secretos.
+`productionUrl` contiene la URL real de Vercel y `socialImagePath` apunta a `/bd-vanta-og-image.png` (1731 × 909 px) dentro de `public/`. Durante el build, `vite.config.js` genera canonical, `og:url`, `og:image` y `twitter:image` con URLs absolutas. `domainCandidate` registra `bdvanta.com` como posibilidad, sin asumir que esté comprado, conectado o publicado. La URL base de Vite permanece `/`. No hay `.env` ni secretos.
 
-## Pendientes antes de publicar
+## Estado de producción y pendientes
 
-- Confirmar la URL pública antes de completar los metadatos de producción; conectar `bdvanta.com` únicamente si se compra y configura.
-- Crear imagen social definitiva de 1200 × 630 px y configurar su ruta.
-- Verificar enlaces finales y añadir redes solo cuando existan URLs confirmadas.
+- GitHub público en `Oskarp88/bd-vanta`; Vercel conectado a `main` con preset Vite, build `npm run build` y salida `dist`.
+- La URL pública de Vercel es `https://bd-vanta.vercel.app/`. Canonical, `og:url` e imagen social absoluta se generan a partir de esa URL.
+- `bdvanta.com` no está comprado. Conectarlo solo si se adquiere y se confirma que responde en producción; entonces actualizar `productionUrl` y volver a verificar SEO.
+- Facebook e Instagram siguen pendientes de URLs confirmadas.
 - Si en el futuro se conecta el formulario a un servidor, implementar validación del lado servidor, protección contra spam y los textos de privacidad correspondientes.
 
-## Before production
+## Mantenimiento de producción
 
-- [ ] Confirmar URL de producción
+- [x] Confirmar URL de producción de Vercel
+- [x] Configurar canonical y `og:url` mediante `productionUrl`
+- [x] Configurar imagen Open Graph definitiva mediante `socialImagePath`
 - [ ] Conectar `bdvanta.com` si se compra y configura
-- [ ] Actualizar canonical mediante `productionUrl`
-- [ ] Actualizar `og:url` mediante `productionUrl`
-- [ ] Crear imagen Open Graph definitiva y configurar `socialImagePath`
 - [ ] Añadir Facebook si existe una página confirmada
 - [ ] Añadir Instagram si aplica
-- [ ] Prueba final de enlaces
-- [ ] Ejecutar build final tras completar la configuración
+- [ ] Repetir la prueba de enlaces y el build cuando cambie la configuración de producción
 
-Este proyecto se prepara exclusivamente para revisión local. No se realizó deploy ni push.
+Los despliegues de producción se crean automáticamente al subir cambios a `main`. La configuración actual no necesita variables de entorno.
 
 ## Verificación realizada
 

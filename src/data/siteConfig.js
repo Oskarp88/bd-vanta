@@ -11,9 +11,9 @@ export const siteConfig = {
   linkedin: 'https://www.linkedin.com/in/oscarburgos/',
   github: 'https://github.com/Oskarp88',
   portfolio: 'https://oscarburgosportafolio.vercel.app',
-  productionUrl: '',
+  productionUrl: 'https://bd-vanta.vercel.app/',
   domainCandidate: 'bdvanta.com',
-  socialImagePath: null,
+  socialImagePath: '/bd-vanta-og-image.png',
   facebook: '',
   instagram: '',
 };
