@@ -102,3 +102,6 @@ Los despliegues de producción se crean automáticamente al subir cambios a `mai
 - Formulario: servicio preseleccionado desde una tarjeta y resumen generado con datos ficticios para el WhatsApp comercial nuevo; no se envió ningún mensaje.
 - Consola del navegador sin errores ni advertencias durante la prueba.
 - La captura `docs/vista-desktop.png` pertenece a una etapa anterior y se conserva como evidencia histórica; la marca vigente se documenta en `docs/stage-4-rebranding-report.md`.
+- Publicación de etapa 5: GitHub público y Vercel conectados a `main`; el segundo despliegue del commit SEO quedó `Ready`.
+- Producción: canonical, `og:url`, `og:image` y `twitter:image` verificados; imagen OG, favicon y `robots.txt` respondieron 200, y `/.env` respondió 404.
+- QA en producción a los nueve anchos indicados, sin overflow ni errores de consola. El formulario se probó con datos ficticios sin enviar mensajes. Detalles en `docs/stage-5-production-report.md`.
